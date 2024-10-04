@@ -17,6 +17,9 @@ nav .nav_search i {
     top: 0;
     background-color: rgba(102, 117, 148, 0.295);
 } */
+a {
+  text-decoration: none;
+}
 .course-lesson_list {
   width: 100%;
 }
@@ -42,7 +45,7 @@ nav .nav_search i {
   color: red;
 }
 .learning__lesson-item:hover {
-  background-color: rgba(236, 236, 236, 0.527);
+  background-color: rgba(206, 218, 228, 0.527);
 }
 .learning_lesson-add {
   background-color: #4fa1ffc7 !important;
@@ -113,6 +116,44 @@ nav .nav_search i {
   padding: 0 5px;
   border-radius: 5px;
 }
+.manage__learning_lesson.learning__lesson-item {
+  background-color: rgba(241, 246, 250, 0.219);
+  border-bottom: 1px solid rgba(0, 99, 204, 0.13);
+}
+.manage__learning_lesson.learning__lesson-item:hover {
+  background-color: rgb(188, 210, 241);
+}
+.learning_input-question {
+  width: 96% !important;
+}
+.learning__chapter-panel::after {
+  /* display: none; */
+}
+.remove_question-btn {
+  color: #ff5858;
+}
+.remove_question-btn:hover {
+  color: red;
+}
+.learning__lesson-item::after {
+  display: none;
+}
 .learning__lesson-item {
-  background-color: rgba(236, 236, 236, 0.527);
+  padding: 1.5rem 2rem;
+}
+.back__page-btn {
+  cursor: pointer;
+  color: #000000;
+}
+.back__page-btn:hover a {
+  color: #0062cc;
+}
+.learning__lession-quiz.learning__lesson-item-time::before {
+  content: "\f304";
+}
+.learning__chapter-add-btn.learning__chapter-panel::after {
+  display: none;
+}
+.save-chapter_btn {
+  margin-left: 2rem;
 }

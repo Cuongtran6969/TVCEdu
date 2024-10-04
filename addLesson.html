@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVC Home</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="icon" type="image/png" href="./img/logoTab.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./manage.css">
+    <link rel="stylesheet" href="./course.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <nav class="container">
+            <div class="nav_menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <a href="http://127.0.0.1:5501/index.html" class="logo">
+                <h2 class="logo_name">TVCdev</h2>
+            </a>
+            <div class="nav_search">
+                <i class="fa-solid fa-magnifying-glass nav_search-searchBtn"></i>
+                <input type="text" placeholder="Tìm kiếm khóa học, bài viết, video..." class="input_box">
+                <i class="fa-solid fa-xmark nav_search-removeBtn"></i>
+            </div>
+
+            <div class="nav_menu-user">
+                <div class="">
+                    <button class="nav_menu-myLearn">Khóa học của tôi</button>
+                </div>
+                <div class="nav_menu-user-notifi">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="nav_menu-user-account">
+                    <div class="account-image">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="content">
+        <div class="row">
+            <div class="col-xl-2">
+                <!-- nav menu -->
+                <div class="nav_menu w-100">
+                    <div class="nav_overlay"></div>
+                    <div class="nav_menu-account">
+                        <div class="nav_menu-account-img">
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                                alt="">
+                        </div>
+                        <div class="nav_menu-account-name">
+                            <span>Cường trần</span>
+                        </div>
+                    </div>
+                    <div class="nav_menu-list-wrap">
+                        <ul class="nav_menu-list">
+                            <li class="nav_menu-list-item">
+                                <a href="">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>Trang cá nhân</span>
+                                </a>
+                                <!-- <li class="nav_menu-list-item">
+                                <a href="">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    <span>Khóa học của tôi</span>
+                                </a>
+                            </li> -->
+                            </li>
+                        </ul>
+                        <ul class="nav_menu-list">
+                            <li class="nav_menu-list-item">
+                                <a href="">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Trang chủ</span>
+                                </a>
+                            </li>
+                            <li class="nav_menu-list-item nav-item_active">
+                                <a href="">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <span>Khóa học</span>
+                                </a>
+                            </li>
+                            <li class="nav_menu-list-item">
+                                <a href="">
+                                    <i class="fa-solid fa-chalkboard-user"></i>
+                                    <span>Nhân sự</span>
+                                </a>
+                            </li>
+                            <li class="nav_menu-list-item">
+                                <a href="">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <span>Học sinh</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav_menu-list">
+                            <li class="nav_menu-list-item">
+                                <a href="">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    <span>Bìa viết đã lưu</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav_menu-list">
+                            <li class="nav_menu-list-item">
+                                <a href="">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>Giới thiệu</span>
+                                </a>
+                            </li>
+                            <li class="nav_menu-list-item">
+                                <a href="">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Cơ hội việc làm</span>
+                                </a>
+                            </li>
+                            <li class="nav_menu-list-item setting_account-btn">
+                                <a href="">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    <span>Cài đặt </span>
+                                </a>
+                                <ul class="nav_menu-subList">
+                                    <li class="nav_menu-list-item">
+                                        <a href="">
+                                            <span>Cài đặt tài khoản</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav_menu-list-item">
+                                        <a href="">
+                                            <span>Bảo mật đăng nhập</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav_menu-list-item">
+                                        <a href="">
+                                            <span>Thông báo</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav_menu-list-item">
+                                        <a href="">
+                                            <span>Quản lý tiếp thị liên kết</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav_menu-list">
+                            <li class="nav_menu-list-item">
+                                <a href="">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    <span>Đăng xuất</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-10">
+                <div class="popular-courses">
+                    <div class="mt-5">
+                        <a class="ms-5 text-decoration-none fs-2 p-0 back__page-btn" href="courseDetail.html">
+                            <span><i class="fa-solid fa-caret-left"></i></span>
+                            <span class="">Chapter</span>    
+                        </a>
+                    </div>
+                    <h2 class="courses-title mt-5 px-5">Điều hành khóa học</h2>
+                    <div class="popular-header px-5">
+                        <p class="popular-des">Học sáng tạo, thành công vượt trội</p>
+                        <!-- <button class="popular-button">Add course</button> -->
+                    </div>
+                    <div class="row mt-4 px-5">
+                        <div class="col-6 d-flex align-items-center">
+                            <span class="fs-3 me-3">Choose type</span>
+                            <select id="lessonType" class="drop-show_number">
+                                <option value="video">video</option>
+                                <option value="quiz">quizz</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="container mt-5">
+                        <div class="courses-container">
+
+                            <!-- video form -->
+                            <form id="videoForm" style=" margin: 20px; display: none;">
+                                <label class="form-label fs-4">Video upload</label>
+
+                                <div class="mb-3 box-upload_file">
+
+                                    <div id="dropArea" class="drop-area">
+                                        <input type="file" id="videoUpload" accept="video/*" class="file-input"
+                                            style="display: none;">
+
+                                        <div id="uploadIcon" class="upload-icon">
+                                            <i class="fa-solid fa-upload"></i>
+                                            <p>Kéo thả video vào đây hoặc click để chọn</p>
+                                        </div>
+
+                                        <video id="videoPreview" width="100%" controls style="display: none;"></video>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="progress_upload">
+                                        <div class="progress-done_upload" data-done="70">
+                                            70%
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fs-4">Lession title</label>
+                                    <input type="text" class="form-control fs-3 p-2">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fs-4">Lession description</label>
+                                    <textarea type="text" class="form-control fs-3 p-2"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary fs-4 px-5 py-3">Add lession</button>
+                            </form>
+
+                            <!-- quizz -->
+                            <form id="quizForm" style="margin: 20px; display: none;">
+                                <ul class="learning__list quiz__list h-100">
+                                    <li class="learning__item">
+                                        <div class="learning__chapter-panel learning__chapter-1">
+                                            <h2 class="learning__chapter-name mb-0 d-flex align-items-center justify-content-between"
+                                                style="width: 97.2%;">
+                                                <span>1.</span>
+                                                <input type="text" class="learning_input-quiz learning_input-question"
+                                                    value="True or False: The term resources only refers to people, it does not include money or materials or equipment">
+                                                <span class="remove_question-btn"><i
+                                                        class="fa-solid fa-delete-left"></i>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <div class="learning__chapter-collapse">
+                                            <div
+                                                class="learning__lesson-item video-index-0-0 d-flex align-items-center justify-content-between">
+                                                <span class="me-3">
+                                                    <input type="checkbox" />
+                                                </span>
+                                                <h5 class="learning__lesson-item-name w-100 me-2">
+                                                    <input type="text" name=""
+                                                        class="learning_input-quiz learning_input-quiz"
+                                                        style="width: 99%;" value="True">
+                                                </h5>
+                                                <span class="remove_lesson-btn">
+                                                    <i class="fa-solid fa-square-minus fs-3"></i>
+                                                </span>
+                                            </div>
+
+                                            <div
+                                                class="learning__lesson-item video-index-0-0 d-flex align-items-center justify-content-between">
+                                                <span class="me-3">
+                                                    <input type="checkbox" />
+                                                </span>
+                                                <h5 class="learning__lesson-item-name w-100 me-2">
+                                                    <input type="text" name=""
+                                                        class="learning_input-quiz learning_input-quiz"
+                                                        style="width: 99%;" value="False">
+                                                </h5>
+                                                <span class="remove_lesson-btn">
+                                                    <i class="fa-solid fa-square-minus fs-3"></i>
+                                                </span>
+                                            </div>
+                                            <div class="learning__lesson-item learning_lesson-add">
+                                                <h5 class="mb-0 text-white">Add more</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--  showListLesson -->
+                                    <li class="learning__item">
+                                        <div class="learning__chapter-panel learning__chapter-2">
+                                            <h2 class="learning__chapter-name mb-0 d-flex align-items-center justify-content-between"
+                                                style="width: 97.2%;">
+                                                <span>2.</span>
+                                                <input type="text" class="learning_input-quiz learning_input-question"
+                                                    value="In our lessons the acronym RAM stands for:">
+                                                <span class="remove_question-btn"><i
+                                                        class="fa-solid fa-delete-left text-danger"></i></span>
+                                            </h2>
+                                        </div>
+                                        <div class="learning__chapter-collapse">
+                                            <div
+                                                class="learning__lesson-item video-index-0-0 d-flex align-items-center justify-content-between">
+                                                <span class="me-3">
+                                                    <input type="checkbox" />
+                                                </span>
+                                                <h5 class="learning__lesson-item-name w-100 me-2">
+                                                    <input type="text" name=""
+                                                        class="learning_input-quiz learning_input-quiz"
+                                                        style="width: 99%;"
+                                                        value="Responsibility Accountability Matrix">
+                                                </h5>
+                                                <span class="remove_lesson-btn">
+                                                    <i class="fa-solid fa-square-minus fs-3"></i>
+                                                </span>
+                                            </div>
+
+                                            <div
+                                                class="learning__lesson-item video-index-0-0 d-flex align-items-center justify-content-between">
+                                                <span class="me-3">
+                                                    <input type="checkbox" />
+                                                </span>
+                                                <h5 class="learning__lesson-item-name w-100 me-2">
+                                                    <input type="text" name=""
+                                                        class="learning_input-quiz learning_input-quiz"
+                                                        style="width: 99%;" value="Resource Acquisition Management">
+                                                </h5>
+                                                <span class="remove_lesson-btn">
+                                                    <i class="fa-solid fa-square-minus fs-3"></i>
+                                                </span>
+                                            </div>
+
+                                            <div
+                                                class="learning__lesson-item video-index-0-0 d-flex align-items-center justify-content-between">
+                                                <span class="me-3">
+                                                    <input type="checkbox" />
+                                                </span>
+                                                <h5 class="learning__lesson-item-name w-100 me-2">
+                                                    <input type="text" name=""
+                                                        class="learning_input-quiz learning_input-quiz"
+                                                        style="width: 99%;" value="Responsibility Assignment Matrix">
+                                                </h5>
+                                                <span class="remove_lesson-btn">
+                                                    <i class="fa-solid fa-square-minus fs-3"></i>
+                                                </span>
+                                            </div>
+                                            <div class="learning__lesson-item learning_lesson-add">
+                                                <h5 class="mb-0 text-white">Add more</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="" id="add_question-btn">
+                                        <div class="question__add-btn learning__chapter-2">
+                                            <h2 class="learning__chapter-name w-100 mb-0">
+                                                <span><i class="fa-solid fa-plus"></i></span>
+                                                <span>Add more question</span>
+                                            </h2>
+                                        </div>
+                                    </li>
+                                    <button type="submit" class="btn btn-primary fs-4 px-5 py-3 mt-5">Save quiz</button>
+                                </ul>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" id="scroll-top">
+        <i class="fa-sharp fa-solid fa-shuttle-space icon-scroll"></i>
+    </a>
+    <div id="footer" class="px-5">
+        <div class="footer-wrapper">
+            <div class="footer-col col-20 col-full mb-30">
+                <h3 class="footer__logo">
+                    <a href="">TVCdev</a>
+                </h3>
+                <p class="footer__des">Nullam nisi magna, tempor vita nulla sed,
+                    portal sodaless tortor Aenean at sodaless portals.</p>
+                <div class="footer__social">
+                    <a href="" class="footer__icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="" class="footer__icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="footer__icon"><i class="fa-brands fa-vimeo-v"></i></a>
+                    <a href="" class="footer__icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col mt-30 ">
+                <h3 class="footer-col__header">Links</h3>
+                <ul class="footer-col__links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Our Process</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col mt-30">
+                <h3 class="footer-col__header">Community</h3>
+                <ul class="footer-col__links">
+                    <li><a href="">Go Premium</a></li>
+                    <li><a href="">Team Plans</a></li>
+                    <li><a href="">Refer a Friend</a></li>
+                    <li><a href="">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-col mt-30">
+                <h3 class="footer-col__header">Resources</h3>
+                <ul class="footer-col__links">
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Latest Update</a></li>
+                    <li><a href="">Updates Newletter</a></li>
+                    <li><a href="">Flow Management</a></li>
+                </ul>
+            </div>
+            <div class="footer-col mt-30">
+                <div class="footer__app">
+                    <a href="" class="">
+                        <img src="./img/chPlay-app.png" alt="">
+                    </a>
+                    <a href="" class="">
+                        <img src="./img/appStore-app.png" alt="">
+                    </a>
+                </div>
+                <div class="footer__certificate">
+                    <a href="">
+                        <img src="./img/dmca_logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright Cuong tran TVCdev 24/2/2023, All right Reserved</p>
+        </div>
+    </div>
+</body>
+<script>
+   // Sử dụng event delegation để lắng nghe sự kiện click trên phần tử cha
+document.querySelector('.learning__list').addEventListener('click', function(e) {
+    // Kiểm tra nếu người dùng click vào nút 'Remove question' (xoá câu hỏi)
+    if (e.target && e.target.closest('.remove_question-btn')) {
+        const questionItem = e.target.closest('.learning__item');
+        
+        // Xoá phần tử cha 'learning__item' chứa câu hỏi
+        if (questionItem) {
+            questionItem.remove();
+        }
+    }
+
+    // Kiểm tra nếu người dùng click vào nút 'Remove lesson' (xoá bài học)
+    if (e.target && e.target.closest('.remove_lesson-btn')) {
+        const lessonItem = e.target.closest('.learning__lesson-item');
+        
+        // Xoá phần tử cha 'learning__lesson-item' chứa bài học
+        if (lessonItem) {
+            lessonItem.remove();
+        }
+    }
+});
+
+    let removeBtn = document.querySelectorAll('.remove_question-btn');
+
+    // Lặp qua từng nút xóa và gắn sự kiện click
+    removeBtn.forEach(item => {
+        item.addEventListener('click', (e) => {
+            // Ngăn chặn hành vi mặc định nếu cần
+            e.preventDefault();
+
+            // Tìm đến phần tử cha gần nhất là thẻ li .learning__item
+            const liItem = e.target.closest('li.learning__item');
+
+            // Xóa phần tử cha
+            if (liItem) {
+                liItem.remove();
+            }
+        });
+    });
+
+
+    document.getElementById('add_question-btn').addEventListener('click', function () {
+        // Lấy danh sách ul
+        const learningList = document.querySelector('.learning__list');
+
+        // Tạo phần tử li mới
+        const newQuestion = document.createElement('li');
+        newQuestion.classList.add('learning__item');
+
+        // Tạo nội dung cho câu hỏi và các đáp án
+        let listQuestion = document.querySelectorAll('.learning__item');
+        newQuestion.innerHTML = `<div class="learning__chapter-panel learning__chapter-2">
+                                            <h2 class="learning__chapter-name mb-0 d-flex align-items-center justify-content-between"
+                                                style="width: 97.2%;">
+                                                <span>${listQuestion.length + 1}.</span>
+                                                <input type="text" class="learning_input-quiz learning_input-question"
+                                                    value="Input more question...">
+                                                <span class="remove_question-btn"><i
+                                                        class="fa-solid fa-delete-left"></i>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <div class="learning__chapter-collapse">
+                                            <div
+                                                class="learning__lesson-item video-index-0-0 d-flex align-items-center justify-content-between">
+                                                <span class="me-3">
+                                                    <input type="checkbox" />
+                                                </span>
+                                                <h5 class="learning__lesson-item-name w-100 me-2">
+                                                    <input type="text" name=""
+                                                        class="learning_input-quiz learning_input-quiz"
+                                                        style="width: 99%;"
+                                                        value="Input more answer...">
+                                                </h5>
+                                                <span class="remove_lesson-btn">
+                                                    <i class="fa-solid fa-square-minus fs-3"></i>
+                                                </span>
+                                            </div>
+
+                                            <div class="learning__lesson-item learning_lesson-add">
+                                                <h5 class="mb-0 text-white">Add more</h5>
+                                            </div>
+                                        </div>`;
+        // Thêm phần tử mới vào trước nút add_question-btn
+        learningList.insertBefore(newQuestion, document.getElementById('add_question-btn'));
+    });
+
+    let learningQuestion = document.querySelectorAll('.learning_input-question')
+    console.log(learningQuestion);
+
+    learningQuestion.forEach(question => {
+        question.addEventListener('click', (e) => {
+            e.stopPropagation()
+        })
+    });
+    // Lấy tham chiếu đến select và các form
+    const lessonTypeSelect = document.getElementById('lessonType');
+    const videoForm = document.getElementById('videoForm');
+    const quizForm = document.getElementById('quizForm');
+
+    // Sự kiện khi thay đổi loại lesson (video hoặc quiz)
+    lessonTypeSelect.addEventListener('change', function () {
+        const selectedType = this.value; // Lấy giá trị được chọn từ select
+
+        if (selectedType === 'video') {
+            // Hiển thị form video và ẩn form quiz
+            videoForm.style.display = 'block';
+            quizForm.style.display = 'none';
+        } else if (selectedType === 'quiz') {
+            // Hiển thị form quiz và ẩn form video
+            quizForm.style.display = 'block';
+            videoForm.style.display = 'none';
+        }
+    });
+
+    // Khởi tạo trạng thái ban đầu (hiển thị form video nếu chọn video, hoặc quiz nếu chọn quiz)
+    document.addEventListener('DOMContentLoaded', function () {
+        // Mặc định hiển thị form tương ứng khi load trang
+        if (lessonTypeSelect.value === 'video') {
+            videoForm.style.display = 'block';
+            quizForm.style.display = 'none';
+        } else {
+            quizForm.style.display = 'block';
+            videoForm.style.display = 'none';
+        }
+    });
+
+    // Chọn tất cả các nút 'Add more' trong bài học
+    // Sử dụng event delegation để lắng nghe sự kiện click trên phần tử cha
+    document.querySelector('.learning__list').addEventListener('click', function (e) {
+        // Kiểm tra nếu người dùng click vào nút 'Add more'
+        if (e.target && e.target.closest('.learning_lesson-add')) {
+            const button = e.target.closest('.learning_lesson-add');
+
+            // Tìm đến phần collapse chứa các lesson item
+            const lessonCollapse = button.closest('.learning__chapter-collapse');
+
+            // Đếm số lượng lesson hiện có để đánh số index
+            const currentLessonItems = lessonCollapse.querySelectorAll('.learning__lesson-item').length;
+
+            // Tạo một lesson item mới
+            const newLessonItem = document.createElement('div');
+            newLessonItem.className = `learning__lesson-item video-index-${currentLessonItems} d-flex align-items-center justify-content-between`;
+
+            // Nội dung lesson item mới (checkbox và input)
+            newLessonItem.innerHTML = `
+                                                <span class="me-3">
+                                                    <input type="checkbox" />
+                                                </span>
+                                                <h5 class="learning__lesson-item-name w-100 me-2">
+                                                    <input type="text" name=""
+                                                        class="learning_input-quiz learning_input-quiz"
+                                                        style="width: 99%;"
+                                                        value="Input more answer...">
+                                                </h5>
+                                                <span class="remove_lesson-btn">
+                                                    <i class="fa-solid fa-square-minus fs-3"></i>
+                                                </span>
+        `;
+
+            // Chèn lesson item mới vào trước nút "Add more"
+            lessonCollapse.insertBefore(newLessonItem, button);
+        }
+    });
+
+    function showListVideo() {
+        // Gắn sự kiện lên phần tử cha của tất cả các .learning__item
+        const learningList = document.querySelector('.learning__list');
+
+        learningList.addEventListener('click', function (e) {
+            // Kiểm tra nếu người dùng nhấn vào phần tử có class .learning__item
+            if (e.target.closest('.learning__item')) {
+                const chapterItem = e.target.closest('.learning__item');
+
+                // Kiểm tra nếu không phải là click vào phần tử con bên trong .learning__chapter-collapse
+                if (!e.target.closest('.learning__chapter-collapse')) {
+                    // Toggle class để mở hoặc đóng danh sách lesson
+                    chapterItem.classList.toggle('showListLesson');
+                }
+            }
+        });
+
+        // Ngăn chặn sự kiện nổi bọt khi nhấn vào phần tử trong .learning__chapter-collapse
+        learningList.addEventListener('click', function (e) {
+            if (e.target.closest('.learning__chapter-collapse')) {
+                // Ngăn chặn sự kiện nổi bọt
+                e.stopPropagation();
+            }
+        });
+    }
+
+    // Gọi hàm sau khi DOM đã tải
+    showListVideo();
+
+
+
+    const dropArea = document.getElementById('dropArea');
+    const fileInput = document.getElementById('videoUpload');
+    const videoPreview = document.getElementById('videoPreview');
+    const uploadIcon = document.getElementById('uploadIcon');
+
+    // Mở file dialog khi click vào khu vực drop
+    dropArea.addEventListener('click', () => {
+        fileInput.click();
+    });
+
+    // Xử lý khi file được chọn hoặc kéo thả
+    fileInput.addEventListener('change', handleFiles);
+    dropArea.addEventListener('dragover', (event) => {
+        event.preventDefault();
+        dropArea.classList.add('dragging');
+    });
+
+    dropArea.addEventListener('dragleave', () => {
+        dropArea.classList.remove('dragging');
+    });
+
+    dropArea.addEventListener('drop', (event) => {
+        event.preventDefault();
+        dropArea.classList.remove('dragging');
+        const files = event.dataTransfer.files;
+        handleFiles({ target: { files } });
+    });
+
+    function handleFiles(event) {
+        const file = event.target.files[0];
+
+        if (file && file.type.startsWith('video/')) {
+            const videoURL = URL.createObjectURL(file);
+            videoPreview.src = videoURL;
+            videoPreview.style.display = 'block';
+            uploadIcon.style.display = 'none'; // Ẩn icon sau khi upload
+        }
+    }
+    const progress = document.querySelector('.progress-done_upload');
+
+    progress.style.width = progress.getAttribute('data-done_upload') + '%';
+    progress.style.opacity = 1;
+
+
+</script>
+
+</html>

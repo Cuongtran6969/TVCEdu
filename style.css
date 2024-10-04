@@ -16,6 +16,9 @@ body {
 video {
     width: 100% !important;
 }
+li {
+    list-style: none;
+}
 /* body::-webkit-scrollbar{
     width: 1.5rem;
 }
@@ -1381,7 +1384,8 @@ nav .nav_search .input_box {
 .learning__item {
     list-style: none;
 }
-.learning__chapter-panel {
+.learning__chapter-panel,
+.question__add-btn {
     background-color: #f7f8fa;
     padding: 1.5rem 2rem;
     position: relative;

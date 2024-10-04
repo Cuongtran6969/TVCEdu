@@ -173,145 +173,79 @@
             </div>
             <div class="col-xl-10">
                 <div class="popular-courses">
+                    <div class="mt-5">
+                        <a class="ms-5 text-decoration-none fs-2 p-0 back__page-btn" href="manageCourse.html">
+                            <span><i class="fa-solid fa-caret-left"></i></span>
+                            <span class="">Course mangement</span>    
+                        </a>
+                    </div>
                     <h2 class="courses-title mt-5 px-5">Điều hành khóa học</h2>
                     <div class="popular-header px-5">
                         <p class="popular-des">Học sáng tạo, thành công vượt trội</p>
                         <!-- <button class="popular-button">Add course</button> -->
                     </div>
-                    <div class="row mt-4 px-5">
-                        <div class="col-6 d-flex align-items-center">
-                            <span class="fs-3 me-3">Choose type</span>
-                            <select id="lessonType" class="drop-show_number">
-                                <option value="video">video</option>
-                                <option value="quiz">quizz</option>
-                            </select>
-                        </div>
-                    </div>
                     <div class="container mt-5">
                         <div class="courses-container">
+
                             <!-- video form -->
-                            <form id="videoForm" style=" margin: 20px; display: none;">
-                                <label class="form-label fs-4">Video upload</label>
-
+                            <form id="videoForm" style=" margin: 20px;">
+                                <label class="form-label fs-4">Preview course upload</label>
+                            
                                 <div class="mb-3 box-upload_file">
-
                                     <div id="dropArea" class="drop-area">
-                                        <input type="file" id="videoUpload" accept="video/*" class="file-input"
-                                            style="display: none;">
-
+                                        <input type="file" id="videoUpload" accept="video/*" class="file-input" style="display: none;">
                                         <div id="uploadIcon" class="upload-icon">
                                             <i class="fa-solid fa-upload"></i>
                                             <p>Kéo thả video vào đây hoặc click để chọn</p>
                                         </div>
-
                                         <video id="videoPreview" width="100%" controls style="display: none;"></video>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <div class="progress_upload">
-                                        <div class="progress-done_upload" data-done="70">
-                                            70%
+                            
+                                <label class="form-label fs-4">Image upload</label>
+                            
+                                <div class="mb-3 box-upload_file">
+                                    <div id="dropAreaImage" class="drop-area">
+                                        <input type="file" id="imageUpload" accept="image/*" class="file-input" style="display: none;">
+                                        <div id="uploadIconImage" class="upload-icon">
+                                            <i class="fa-solid fa-upload"></i>
+                                            <p>Kéo thả hình ảnh vào đây hoặc click để chọn</p>
                                         </div>
+                                        <img id="imagePreview" width="100%" style="display: none;" />
                                     </div>
                                 </div>
-
+                            
+                                <div class="">
+                                    <div class="progress_upload">
+                                        <div class="progress-done_upload" data-done="70">70%</div>
+                                    </div>
+                                </div>
+                            
                                 <div class="mb-3">
-                                    <label class="form-label fs-4">Lession title</label>
+                                    <label class="form-label fs-4">Courese title</label>
                                     <input type="text" class="form-control fs-3 p-2">
                                 </div>
-
                                 <div class="mb-3">
-                                    <label class="form-label fs-4">Lession description</label>
+                                    <label class="form-label fs-4">Courese Price</label>
+                                    <input type="number" class="form-control fs-3 p-2">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fs-4">Courese Type</label>
+                                    <select class="form-select form-select-lg mb-3 p-2 fs-3" aria-label=".form-select-lg example">
+                                        <option value="1">Front-end</option>
+                                        <option value="2">Back-end</option>
+                                        <option value="3">Devop</option>
+                                      </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fs-4">Courese description</label>
                                     <textarea type="text" class="form-control fs-3 p-2"></textarea>
                                 </div>
-
-                                <button type="submit" class="btn btn-primary fs-4 px-5 py-3">Add lession</button>
+                            
+                                <button type="submit" class="btn btn-primary fs-4 px-5 py-3">Add lesson</button>
                             </form>
+                            
 
-                            <!-- quizz -->
-                            <form id="quizForm" style="margin: 20px; display: none;">
-                                <ul class="learning__list h-100">
-                                    <li class="learning__item">
-                                        <div class="learning__chapter-panel learning__chapter-1">
-                                            <h2 class="learning__chapter-name">1. True or False: The term resources only
-                                                refers to people, it does not include money or materials or equipment
-                                            </h2>
-                                            <span class="learning__chapter-progress"></span>
-                                        </div>
-                                        <div class="learning__chapter-collapse">
-                                            <div
-                                                class="learning__lesson-item video-index-0-0  d-flex align-items-center">
-                                                <span class="me-3">
-                                                    <input type="checkbox" />
-                                                </span>
-                                                <h5 class="learning__lesson-item-name w-100">
-                                                    <input type="text" name="" class="learning_input-quiz" value="True">
-                                                </h5>
-                                            </div>
-
-                                            <div
-                                                class="learning__lesson-item video-index-0-1 d-flex align-items-center">
-                                                <span class="me-3">
-                                                    <input type="checkbox" />
-                                                </span>
-                                                <h5 class="learning__lesson-item-name w-100">
-                                                    <input type="text" name="" class="learning_input-quiz"
-                                                        value="False">
-                                                </h5>
-                                            </div>
-                                            <div class="learning__lesson-item learning_lesson-add">
-                                                <h5 class="mb-0 text-white">Add more</h5>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="learning__item showListLesson">
-                                        <div class="learning__chapter-panel learning__chapter-2">
-                                            <h2 class="learning__chapter-name">2. In our lessons the acronym RAM stands
-                                                for:
-                                            </h2>
-                                        </div>
-                                        <div class="learning__chapter-collapse">
-
-                                            <div
-                                                class="learning__lesson-item video-index-1-0 d-flex align-items-center">
-                                                <span class="me-3">
-                                                    <input type="checkbox" />
-                                                </span>
-                                                <h5 class="learning__lesson-item-name w-100">
-                                                    <input type="text" name="" class="learning_input-quiz"
-                                                        value="Responsibility Accountability Matrix">
-                                                </h5>
-                                            </div>
-
-                                            <div
-                                                class="learning__lesson-item video-index-1-1 d-flex align-items-center">
-                                                <span class="me-3">
-                                                    <input type="checkbox" />
-                                                </span>
-                                                <h5 class="learning__lesson-item-name w-100">
-                                                    <input type="text" name="" class="learning_input-quiz"
-                                                        value="Resource Acquisition Management">
-                                                </h5>
-                                            </div>
-
-                                            <div
-                                                class="learning__lesson-item video-index-1-2 d-flex align-items-center">
-                                                <span class="me-3">
-                                                    <input type="checkbox" />
-                                                </span>
-                                                <h5 class="learning__lesson-item-name w-100">
-                                                    <input type="text" name="" class="learning_input-quiz"
-                                                        value="Responsibility Assignment Matrix">
-                                                </h5>
-                                            </div>
-                                            <div class="learning__lesson-item learning_lesson-add">
-                                                <h5 class="mb-0 text-white">Add more</h5>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <button type="submit" class="btn btn-primary fs-4 px-5 py-3 mt-5">Save quiz</button>
-                                </ul>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -385,126 +319,86 @@
     </div>
 </body>
 <script>
+// Khu vực upload video
+const dropArea = document.getElementById('dropArea');
+const fileInput = document.getElementById('videoUpload');
+const videoPreview = document.getElementById('videoPreview');
+const uploadIcon = document.getElementById('uploadIcon');
 
-    // Lấy tham chiếu đến select và các form
-    const lessonTypeSelect = document.getElementById('lessonType');
-    const videoForm = document.getElementById('videoForm');
-    const quizForm = document.getElementById('quizForm');
+// Khu vực upload ảnh
+const dropAreaImage = document.getElementById('dropAreaImage');
+const fileInputImage = document.getElementById('imageUpload');
+const imagePreview = document.getElementById('imagePreview');
+const uploadIconImage = document.getElementById('uploadIconImage');
 
-    // Sự kiện khi thay đổi loại lesson (video hoặc quiz)
-    lessonTypeSelect.addEventListener('change', function () {
-        const selectedType = this.value; // Lấy giá trị được chọn từ select
+// Mở file dialog khi click vào khu vực drop (video)
+dropArea.addEventListener('click', () => {
+    fileInput.click();
+});
 
-        if (selectedType === 'video') {
-            // Hiển thị form video và ẩn form quiz
-            videoForm.style.display = 'block';
-            quizForm.style.display = 'none';
-        } else if (selectedType === 'quiz') {
-            // Hiển thị form quiz và ẩn form video
-            quizForm.style.display = 'block';
-            videoForm.style.display = 'none';
-        }
-    });
+// Mở file dialog khi click vào khu vực drop (ảnh)
+dropAreaImage.addEventListener('click', () => {
+    fileInputImage.click();
+});
 
-    // Khởi tạo trạng thái ban đầu (hiển thị form video nếu chọn video, hoặc quiz nếu chọn quiz)
-    document.addEventListener('DOMContentLoaded', function () {
-        // Mặc định hiển thị form tương ứng khi load trang
-        if (lessonTypeSelect.value === 'video') {
-            videoForm.style.display = 'block';
-            quizForm.style.display = 'none';
-        } else {
-            quizForm.style.display = 'block';
-            videoForm.style.display = 'none';
-        }
-    });
+// Xử lý khi file được chọn hoặc kéo thả (video)
+fileInput.addEventListener('change', handleFiles);
+dropArea.addEventListener('dragover', (event) => {
+    event.preventDefault();
+    dropArea.classList.add('dragging');
+});
 
-    // Chọn tất cả các nút 'Add more' trong bài học
-    const addLessonButtons = document.querySelectorAll('.learning_lesson-add');
+dropArea.addEventListener('dragleave', () => {
+    dropArea.classList.remove('dragging');
+});
 
-    // Lặp qua các nút 'Add more' và thêm sự kiện click
-    addLessonButtons.forEach((button, index) => {
-        button.addEventListener('click', function () {
-            // Tìm đến phần collapse chứa các lesson item
-            const lessonCollapse = this.closest('.learning__chapter-collapse');
+dropArea.addEventListener('drop', (event) => {
+    event.preventDefault();
+    dropArea.classList.remove('dragging');
+    const files = event.dataTransfer.files;
+    handleFiles({ target: { files } });
+});
 
-            // Đếm số lượng lesson hiện có để đánh số index
-            const currentLessonItems = lessonCollapse.querySelectorAll('.learning__lesson-item').length;
+function handleFiles(event) {
+    const file = event.target.files[0];
 
-            // Tạo một lesson item mới
-            const newLessonItem = document.createElement('div');
-            newLessonItem.className = `learning__lesson-item video-index-${index}-${currentLessonItems} d-flex align-items-center`;
-
-            // Nội dung lesson item mới (checkbox và input)
-            newLessonItem.innerHTML = `
-            <span class="me-3">
-                <input type="checkbox" />
-            </span>
-            <h5 class="learning__lesson-item-name w-100">
-                <input type="text" name="" class="learning_input-quiz" value="New Answer">
-            </h5>
-        `;
-
-            // Chèn lesson item mới vào trước nút "Add more"
-            lessonCollapse.insertBefore(newLessonItem, this);
-        });
-    });
-
-    function showListVideo() {
-        let listChapter = document.querySelectorAll('.learning__item')
-        listChapter.forEach((chapterItem) => {
-            chapterItem.addEventListener('click', () => {
-                chapterItem.classList.toggle('showListLesson')
-            })
-            let listVideoofChapter = chapterItem.querySelector('.learning__chapter-collapse')
-            listVideoofChapter.addEventListener('click', (e) => {
-                e.stopPropagation()
-            })
-        })
+    if (file && file.type.startsWith('video/')) {
+        const videoURL = URL.createObjectURL(file);
+        videoPreview.src = videoURL;
+        videoPreview.style.display = 'block';
+        uploadIcon.style.display = 'none'; // Ẩn icon sau khi upload
     }
-    showListVideo()
+}
 
-    const dropArea = document.getElementById('dropArea');
-    const fileInput = document.getElementById('videoUpload');
-    const videoPreview = document.getElementById('videoPreview');
-    const uploadIcon = document.getElementById('uploadIcon');
+// Xử lý khi file được chọn hoặc kéo thả (ảnh)
+fileInputImage.addEventListener('change', handleImageFiles);
+dropAreaImage.addEventListener('dragover', (event) => {
+    event.preventDefault();
+    dropAreaImage.classList.add('dragging');
+});
 
-    // Mở file dialog khi click vào khu vực drop
-    dropArea.addEventListener('click', () => {
-        fileInput.click();
-    });
+dropAreaImage.addEventListener('dragleave', () => {
+    dropAreaImage.classList.remove('dragging');
+});
 
-    // Xử lý khi file được chọn hoặc kéo thả
-    fileInput.addEventListener('change', handleFiles);
-    dropArea.addEventListener('dragover', (event) => {
-        event.preventDefault();
-        dropArea.classList.add('dragging');
-    });
+dropAreaImage.addEventListener('drop', (event) => {
+    event.preventDefault();
+    dropAreaImage.classList.remove('dragging');
+    const files = event.dataTransfer.files;
+    handleImageFiles({ target: { files } });
+});
 
-    dropArea.addEventListener('dragleave', () => {
-        dropArea.classList.remove('dragging');
-    });
+function handleImageFiles(event) {
+    const file = event.target.files[0];
 
-    dropArea.addEventListener('drop', (event) => {
-        event.preventDefault();
-        dropArea.classList.remove('dragging');
-        const files = event.dataTransfer.files;
-        handleFiles({ target: { files } });
-    });
-
-    function handleFiles(event) {
-        const file = event.target.files[0];
-
-        if (file && file.type.startsWith('video/')) {
-            const videoURL = URL.createObjectURL(file);
-            videoPreview.src = videoURL;
-            videoPreview.style.display = 'block';
-            uploadIcon.style.display = 'none'; // Ẩn icon sau khi upload
-        }
+    if (file && file.type.startsWith('image/')) {
+        const imageURL = URL.createObjectURL(file);
+        imagePreview.src = imageURL;
+        imagePreview.style.display = 'block';
+        uploadIconImage.style.display = 'none'; // Ẩn icon sau khi upload
     }
-    const progress = document.querySelector('.progress-done_upload');
+}
 
-    progress.style.width = progress.getAttribute('data-done_upload') + '%';
-    progress.style.opacity = 1;
 </script>
 
 </html>
