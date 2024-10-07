@@ -19,6 +19,9 @@ video {
 li {
     list-style: none;
 }
+a:hover {
+    color: #fff !important;
+}
 /* body::-webkit-scrollbar{
     width: 1.5rem;
 }
@@ -53,7 +56,7 @@ body::-webkit-scrollbar-thumb{
 .container {
     padding: 0 6rem;
     justify-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* margin: 0 auto; */
 }
 nav {
@@ -162,13 +165,16 @@ nav .nav_search .input_box {
 .nav_menu-user-account {
     margin-left: 1rem;
 }
-.account-image {
+.account-image_box {
     width: 3rem;
     height: 3rem;
     margin-left: 1rem;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+}
+.account-image {
+    position: relative;
 }
 .account-image img{
    width: 100%;
@@ -311,6 +317,18 @@ nav .nav_search .input_box {
 .nav_menu-subList.showSubList {
     display: block;
     margin: 2rem 0 0 2rem;
+}
+.register-btn,
+.login-btn  {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+}
+.login-btn {
+    background: rgb(1,34,80);
+    padding: 8px 20px;
+    margin-left: 2rem;
+    background: linear-gradient(0deg, rgba(1,34,80,1) 0%, rgba(9,70,121,1) 35%, rgba(0,185,255,1) 100%);
 }
 #banner {
     margin-top: 8rem;
@@ -1632,4 +1650,44 @@ nav .nav_search .input_box {
 }
 .learning__lesson-nav.hasClick .learning__lesson-menuICon {
     display: flex;
+}
+.user-nav {
+    min-width:230px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 120%;
+    padding-bottom: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: none;
+    opacity: 0; 
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out;
+}
+.user-nav.showUserNav {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); 
+}
+.user-nav img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.user-nav li {
+    cursor: pointer;
+}
+.user-nav li:hover a {
+    color: #000 !important;
+}
+.student-img_learning {
+    width: 30px;
+    height: 30px;
+    margin-right: -10px;
+}
+.student-img_learning img {
+    border-radius: 50% !important;
+    border: 2px solid #fff;
 }

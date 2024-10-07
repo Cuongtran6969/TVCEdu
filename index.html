@@ -14,6 +14,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -144,6 +149,9 @@
                 </div>
             </div>
             <div class="nav_menu-user">
+                <!-- <a href="login" class="text-decoration-none register-btn d-none d-md-block">Đăng ký</a>
+                <a href="login" class="text-decoration-none login-btn" style="border-radius: 15px;">Đăng nhập</a> -->
+                <!-- have login -->
                 <div class="">
                     <button class="nav_menu-myLearn">Khóa học của tôi</button>
                 </div>
@@ -152,8 +160,48 @@
                 </div>
                 <div class="nav_menu-user-account">
                     <div class="account-image">
-                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                        <div class="account-image_box">
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
                             alt="">
+                        </div>
+                            <div class="user-nav">
+                                <ul class="p-0">
+                                    <a class="d-flex align-items-center text-decoration-none" href="/@cuongtran11">
+                                        <div class="">
+                                            <div class="" style="">
+                                                <img src="https://files.fullstack.edu.vn/f8-prod/user_avatars/123041/64512843889dd.jpg" alt="Trần Cường">
+                                            </div>
+                                        </div>
+                                        <div class="ms-4">
+                                            <span class="fw-bold fs-4 text-dark">Trần Cường</span>
+                                            <div class="fs-5 text-muted">@cuongtran11</div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                    <ul class="p-0">
+                                        <li>
+                                            <a class="fs-4 text-muted text-decoration-none" href="/@cuongtran11">Trang cá nhân</a>
+                                        </li>
+                                    </ul>
+                                    <hr class="">
+                                    <ul class="p-0">
+                                        <li>
+                                            <a class="fs-4 text-muted text-decoration-none" href="/my-courses">Khóa học của tôi</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="p-0">
+                                        <li class="py-2"><a class="fs-4 text-muted text-decoration-none" href="/new-post">Viết blog</a></li>
+                                        <li class="py-2"><a class="fs-4 text-muted text-decoration-none" href="/me/posts">Bài viết của tôi</a></li>
+                                        <li class="py-2"><a class="fs-4 text-muted text-decoration-none" href="/me/bookmark">Bài viết đã lưu</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="p-0">
+                                        <li class="py-2"><a class="fs-4 text-muted text-decoration-none">Cài đặt</a></li>
+                                        <li class="py-2"><a class="fs-4 text-muted text-decoration-none">Đăng xuất</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -233,6 +281,195 @@
                 <button class="popular-button">See All jobs</button>
             </div>
             <div class="courses-container">
+                <div class="courses-item learned-0 index-0">
+                    <div class="courses-item__link">
+                        <img src="https://files.fullstack.edu.vn/f8-prod/courses/2.png" alt="">
+                        <div class="actionHover">
+
+                            <button class="courses-item__btn" data-course-index="0">Xem khóa học</button>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="course-info__type">fron-end</span>
+                        <h3 class="course-info__name">Lap trinh Reactjs</h3>
+                        <div class="course-count">
+                            <div class="student-count">
+                                <i class="fa-regular fa-user"></i>
+                                <span>200K</span>
+                            </div>
+                            <div class="star-count">
+                                <i class="fa-regular fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="price-count">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <span>$300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-item learned-0 index-0">
+                    <div class="courses-item__link">
+                        <img src="https://files.fullstack.edu.vn/f8-prod/courses/2.png" alt="">
+                        <div class="actionHover">
+
+                            <button class="courses-item__btn" data-course-index="0">Xem khóa học</button>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="course-info__type">fron-end</span>
+                        <h3 class="course-info__name">Lap trinh Reactjs</h3>
+                        <div class="course-count">
+                            <div class="student-count">
+                                <i class="fa-regular fa-user"></i>
+                                <span>200K</span>
+                            </div>
+                            <div class="star-count">
+                                <i class="fa-regular fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="price-count">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <span>$300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-item learned-0 index-0">
+                    <div class="courses-item__link">
+                        <img src="https://files.fullstack.edu.vn/f8-prod/courses/2.png" alt="">
+                        <div class="actionHover">
+
+                            <button class="courses-item__btn" data-course-index="0">Xem khóa học</button>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="course-info__type">fron-end</span>
+                        <h3 class="course-info__name">Lap trinh Reactjs</h3>
+                        <div class="course-count">
+                            <div class="student-count">
+                                <i class="fa-regular fa-user"></i>
+                                <span>200K</span>
+                            </div>
+                            <div class="star-count">
+                                <i class="fa-regular fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="price-count">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <span>$300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-item learned-0 index-0">
+                    <div class="courses-item__link">
+                        <img src="https://files.fullstack.edu.vn/f8-prod/courses/2.png" alt="">
+                        <div class="actionHover">
+
+                            <button class="courses-item__btn" data-course-index="0">Xem khóa học</button>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="course-info__type">fron-end</span>
+                        <h3 class="course-info__name">Lap trinh Reactjs</h3>
+                        <div class="course-count">
+                            <div class="student-count">
+                                <i class="fa-regular fa-user"></i>
+                                <span>200K</span>
+                            </div>
+                            <div class="star-count">
+                                <i class="fa-regular fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="price-count">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <span>$300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-item learned-0 index-0">
+                    <div class="courses-item__link">
+                        <img src="https://files.fullstack.edu.vn/f8-prod/courses/2.png" alt="">
+                        <div class="actionHover">
+
+                            <button class="courses-item__btn" data-course-index="0">Xem khóa học</button>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="course-info__type">fron-end</span>
+                        <h3 class="course-info__name">Lap trinh Reactjs</h3>
+                        <div class="course-count">
+                            <div class="student-count">
+                                <i class="fa-regular fa-user"></i>
+                                <span>200K</span>
+                            </div>
+                            <div class="star-count">
+                                <i class="fa-regular fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="price-count">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <span>$300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-item learned-0 index-0">
+                    <div class="courses-item__link">
+                        <img src="https://files.fullstack.edu.vn/f8-prod/courses/2.png" alt="">
+                        <div class="actionHover">
+
+                            <button class="courses-item__btn" data-course-index="0">Xem khóa học</button>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="course-info__type">fron-end</span>
+                        <h3 class="course-info__name">Lap trinh Reactjs</h3>
+                        <div class="course-count">
+                            <div class="student-count">
+                                <i class="fa-regular fa-user"></i>
+                                <span>200K</span>
+                            </div>
+                            <div class="star-count">
+                                <i class="fa-regular fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="price-count">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <span>$300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-item learned-0 index-0">
+                    <div class="courses-item__link">
+                        <img src="https://files.fullstack.edu.vn/f8-prod/courses/2.png" alt="">
+                        <div class="actionHover">
+
+                            <button class="courses-item__btn" data-course-index="0">Xem khóa học</button>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <span class="course-info__type">fron-end</span>
+                        <h3 class="course-info__name">Lap trinh Reactjs</h3>
+                        <div class="course-count">
+                            <div class="student-count">
+                                <i class="fa-regular fa-user"></i>
+                                <span>200K</span>
+                            </div>
+                            <div class="star-count">
+                                <i class="fa-regular fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="price-count">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <span>$300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="courses-item learned-0 index-0">
                     <div class="courses-item__link">
                         <img src="https://files.fullstack.edu.vn/f8-prod/courses/2.png" alt="">
@@ -433,7 +670,7 @@
     <a href="#" id="scroll-top">
         <i class="fa-sharp fa-solid fa-shuttle-space icon-scroll"></i>
     </a>
-    <div id="footer" class="container">
+    <div id="footer" class="container-fluid p-5">
         <div class="footer-wrapper">
             <div class="footer-col col-20 col-full mb-30">
                 <h3 class="footer__logo">
@@ -518,6 +755,11 @@
             clickable: true,
         }
     });
+    const accImg = document.querySelector('.account-image')
+    const userNav = document.querySelector('.user-nav')
+    accImg.addEventListener('click', () => {
+        userNav.classList.toggle('showUserNav')
+    })
 </script>
 
 </html>

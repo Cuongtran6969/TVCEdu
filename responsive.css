@@ -133,7 +133,7 @@
         display: none;
     }
     .nav_menu-btn {
-        width: 8%;
+        width: 7%;
         justify-content: flex-start;
         display: block;
     }
@@ -144,10 +144,10 @@
         width: 60%;
      }
      .nav_menu-user {
-        width: 10%;
+        width: 35%;
      }
      .nav_menu-user-account {
-        display: none;
+        /* display: none; */
      }
      .nav_menu-myLearn {
         display: none;
@@ -263,7 +263,13 @@
 }
 @media (max-width: 400px) {
     nav .nav_search {
-        width: 70%;
+        width: 55%;
+    }
+    .nav_menu-btn {
+        width: 10%;
+    }
+    .nav_menu-user {
+        width: 20%;
     }
     .landingPage .header__course-title {
         font-size: 1.3rem;
